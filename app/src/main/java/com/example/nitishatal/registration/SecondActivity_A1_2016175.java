@@ -60,9 +60,10 @@ public class SecondActivity_A1_2016175 extends AppCompatActivity {
 
     @Override
     protected void onStart() {
+        super.onStart();
         int duration = Toast.LENGTH_SHORT;
         Context context = getApplicationContext();
-        super.onStart();
+
         // The activity is about to become visible.
         if(pre.equals("")){
             Log.i("lifecycle","(Activity2)onStart invoked");
@@ -83,9 +84,10 @@ public class SecondActivity_A1_2016175 extends AppCompatActivity {
 
     @Override
     protected void onResume() {
+        super.onResume();
         int duration = Toast.LENGTH_SHORT;
         Context context = getApplicationContext();
-        super.onResume();
+
         // The activity has become visible (it is now "resumed").
         if(pre.equals("")){
 
@@ -126,6 +128,7 @@ public class SecondActivity_A1_2016175 extends AppCompatActivity {
 
     @Override
     protected void onStop() {
+        super.onStop();
         int duration = Toast.LENGTH_SHORT;
         Context context = getApplicationContext();
         super.onStop();
@@ -149,6 +152,7 @@ public class SecondActivity_A1_2016175 extends AppCompatActivity {
 
     @Override
     protected void onDestroy() {
+        super.onDestroy();
         int duration = Toast.LENGTH_SHORT;
         Context context = getApplicationContext();
         super.onDestroy();

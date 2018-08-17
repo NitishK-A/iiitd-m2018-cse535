@@ -74,9 +74,10 @@ public class MainActivity_A1_2016175 extends AppCompatActivity {
 
     @Override
     protected void onStart() {
+        super.onStart();
         int duration = Toast.LENGTH_SHORT;
         Context context = getApplicationContext();
-        super.onStart();
+
         // The activity is about to become visible.
         if(pre.equals("")){
             Log.i("lifecycle","onStart invoked(MainActivity)");
@@ -97,9 +98,10 @@ public class MainActivity_A1_2016175 extends AppCompatActivity {
 
     @Override
     protected void onResume() {
+        super.onResume();
         int duration = Toast.LENGTH_SHORT;
         Context context = getApplicationContext();
-        super.onResume();
+
         // The activity has become visible (it is now "resumed").
         if(pre.equals("")){
 
@@ -141,9 +143,10 @@ public class MainActivity_A1_2016175 extends AppCompatActivity {
 
     @Override
     protected void onStop() {
+        super.onStop();
         int duration = Toast.LENGTH_SHORT;
         Context context = getApplicationContext();
-        super.onStop();
+
         // The activity is no longer visible (it is now "stopped")
         if(pre.equals("")){
             Log.i("lifecycle","onStop invoked(MainActivity)");
@@ -164,9 +167,10 @@ public class MainActivity_A1_2016175 extends AppCompatActivity {
 
     @Override
     protected void onDestroy() {
+        super.onDestroy();
         int duration = Toast.LENGTH_SHORT;
         Context context = getApplicationContext();
-        super.onDestroy();
+
         // The activity is about to be destroyed.
         //Log.d("lifecycle","onResume invoked");
         if(pre.equals("")){
@@ -184,6 +188,7 @@ public class MainActivity_A1_2016175 extends AppCompatActivity {
             pre="onDestroy";
         }
     }
+
 
 
 
